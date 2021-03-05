@@ -1,0 +1,27 @@
+controller_list:
+  - name: /aibot/controller/mycobot_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - joint2_to_joint1
+      - joint3_to_joint2
+      - joint4_to_joint3
+      - joint5_to_joint4
+      - joint6_to_joint5
+      - joint6output_to_joint6
+    constraints:
+      goal_time: 0.5
+      stopped_velocity_tolerance: 0.02
+      joint2_to_joint1:
+        goal: 0.02
+      joint3_to_joint2:
+        goal: 0.02
+      joint4_to_joint3:
+        goal: 0.02
+      joint5_to_joint4:
+        goal: 0.02
+      joint6_to_joint5:
+        goal: 0.02
+      joint6output_to_joint6:
+        goal: 0.02

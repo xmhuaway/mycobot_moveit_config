@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ros_arm_moveit
+    relative_path: urdf/mycobot_urdf.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/aibot.srdf
+  CONFIG:
+    author_name: kevin
+    author_email: 441325961@qq.com
+    generated_timestamp: 1614911710
